@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/imageView"
+        android:src="@mipmap/ic_launcher"
+        android:padding="3dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_toEndOf="@id/imageView"
+        android:text="This is title"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#000"
+        android:textSize="14dp"
+        android:layout_marginTop="-200dp"
+        android:layout_marginStart="10dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/imageView" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sizetextview"
+        android:layout_toEndOf="@id/imageView"
+        android:text="This is size"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#000"
+        android:textSize="13dp"
+        android:layout_marginTop="-600dp"
+        android:layout_marginStart="146dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/imageView"
+        android:layout_marginLeft="146dp" />
+
+
+
+
+
+    <ImageView
+        android:id="@+id/menuMore"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/black"
+        android:layout_alignParentEnd="true"
+        android:padding="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_close"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:id="@+id/purchaseitem"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginLeft="273.5dp"
+        android:layout_marginTop="21dp"
+        android:background="@color/myColor4"
+        android:fontFamily="serif-monospace"
+        android:padding="5dp"
+        android:text="PURCHASE"
+        android:textColor="@color/ghost"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/customizeitem"
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/teal_700"
+        android:fontFamily="serif-monospace"
+        android:padding="5dp"
+        android:text="customize"
+
+        />
+
+
+</RelativeLayout>

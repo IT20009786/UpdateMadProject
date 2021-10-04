@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".AddRiderTable">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="80dp"
+        app:cardBackgroundColor="@color/yellow"
+        app:cardCornerRadius="34dp"
+        app:cardElevation="6dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="363dp"
+            android:layout_height="match_parent"
+            android:background="@android:drawable/screen_background_light_transparent"
+            android:padding="20dp">
+
+
+            <TextView
+                android:id="@+id/txtRider"
+                android:layout_width="171dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="4dp"
+                android:text="Riders Details"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/txtName"
+                android:layout_width="320dp"
+                android:layout_height="55dp"
+                android:background="@drawable/button"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:ems="10"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:paddingLeft="20dp"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.493"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtRider" />
+
+            <EditText
+                android:id="@+id/txtMobile"
+                android:layout_width="320dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/button"
+                android:drawableLeft="@drawable/ic_baseline_phone_24"
+                android:ems="10"
+                android:hint="Mobile"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:paddingLeft="0dp"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtName" />
+
+            <EditText
+                android:id="@+id/txtVehicle"
+                android:layout_width="320dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/button"
+                android:drawableLeft="@drawable/ic_baseline_directions_car_24"
+                android:ems="10"
+                android:hint="Vehical Number"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:paddingLeft="0dp"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtAdress" />
+
+            <EditText
+                android:id="@+id/txtEmail"
+                android:layout_width="320dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/button"
+                android:drawableLeft="@drawable/ic_baseline_email_24"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:paddingLeft="0dp"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtMobile" />
+
+            <EditText
+                android:id="@+id/txtAdress"
+                android:layout_width="320dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/button"
+                android:drawableLeft="@drawable/ic_baseline_home_24"
+                android:ems="10"
+                android:hint="Adress"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:paddingLeft="0dp"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
+
+            <Button
+                android:id="@+id/btnupdate"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/button"
+                android:drawableBottom="@drawable/ic_baseline_edit_24"
+                android:onClick="updateData"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtVehicle" />
+
+            <Button
+                android:id="@+id/btnDelete"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="21dp"
+                android:layout_marginLeft="21dp"
+                android:layout_marginTop="68dp"
+                android:layout_marginEnd="21dp"
+                android:layout_marginRight="21dp"
+                android:background="@drawable/button"
+                android:drawableBottom="@drawable/ic_baseline_delete_24"
+                android:onClick="deleteData"
+                android:text="Delete"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btnupdate" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

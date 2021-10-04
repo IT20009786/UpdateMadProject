@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:contentDescription="@string/safe_boy_image"
+    tools:context=".Second_Launch">
+
+    <Button
+        android:id="@+id/nextbtn2"
+        android:layout_width="216dp"
+        android:layout_height="46dp"
+        android:text="NEXT"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:backgroundTint="#FF6331"
+        app:cornerRadius="12px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.85" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="412dp"
+        android:layout_height="375dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="Safe boy Delivering packages"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.224"
+        app:srcCompat="@drawable/safeboy" />
+
+    <TextView
+        android:id="@+id/frontText"
+        android:layout_width="301dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/frontText"
+        android:textColor="#4A4B4D"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="164dp"
+        android:layout_height="47dp"
+        android:text="@string/statysafe"
+        android:textColor="#4A4B4D"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frontText" />
+</androidx.constraintlayout.widget.ConstraintLayout>

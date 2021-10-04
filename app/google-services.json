@@ -1,0 +1,85 @@
+{
+  "project_info": {
+    "project_number": "206797231333",
+    "firebase_url": "https://more-meal-7891f-default-rtdb.firebaseio.com",
+    "project_id": "more-meal-7891f",
+    "storage_bucket": "more-meal-7891f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:206797231333:android:28b8006889b301d85ab00c",
+        "android_client_info": {
+          "package_name": "com.example.moremeal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "206797231333-di1ipmivhcphvbbn7q30ucjirnhvnqo7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.moremeal",
+            "certificate_hash": "f301c1e596b33fd0f11001e6093c4a14ead6b8a3"
+          }
+        },
+        {
+          "client_id": "206797231333-i92vlmo7pu51h2o532o640dcma9p3ecd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.moremeal",
+            "certificate_hash": "e41b8cb04ddf75ab73096db84e66c38386440e66"
+          }
+        },
+        {
+          "client_id": "206797231333-6nno7hublmk5mn3p2cnesid513l6ig4f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDk5FG51UNKuJXT2o6iGUFQb5YNh0On8oc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "206797231333-6nno7hublmk5mn3p2cnesid513l6ig4f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:206797231333:android:920d9234e40294025ab00c",
+        "android_client_info": {
+          "package_name": "com.example.moremealcustomer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "206797231333-6nno7hublmk5mn3p2cnesid513l6ig4f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDk5FG51UNKuJXT2o6iGUFQb5YNh0On8oc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "206797231333-6nno7hublmk5mn3p2cnesid513l6ig4f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

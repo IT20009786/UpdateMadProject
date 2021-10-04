@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Kamuko</string>
+
+    <string name="safe_boy_image">Safe boy delivering packages</string>
+    <string name="regi_first_name">First Name</string>
+    <string name="regi_last_name">Last Name</string>
+    <string name="regi_address">Address</string>
+    <string name="regi_email">Email</string>
+    <string name="regi_password">Password</string>
+    <string name="regi_register">Register</string>
+    <string name="regi_text">text</string>
+    <string name="frontText">Safe Delivery to your doorstep !</string>
+    <string name="statysafe">Stay Safe ! Stay Happy !</string>
+    <string name="logintext">Login</string>
+    <string name="LOGIN">LOGIN</string>
+    <string name="forgetpasswordText">Forget Your Password</string>
+    <string name="orloginwithText">or Login with</string>
+    <string name="donthaveaccountText">don\'t have an Account ?</string>
+    <string name="web_client_id">206797231333-6nno7hublmk5mn3p2cnesid513l6ig4f.apps.googleusercontent.com</string>
+    <string name="title_activity_bottom_nav">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="txtView1">Bacon Pizza</string>
+    <string name="txtView2">Please Select the Size...</string>
+    <string name="txtView3">Number of Pizzas....</string>
+    <string name="txtNumber1">1</string>
+    <string name="button1">Add to cart</string>
+    <string name="price1">Rs .900//</string>
+    <string name="price2">Rs. 1500//</string>
+    <string name="price3">Rs. 2300//</string>
+    <string name="size1">Medium</string>
+    <string name="Size2">Large</string>
+    <string name="Size3">Premium</string>
+
+
+
+
+</resources>

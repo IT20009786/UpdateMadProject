@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background"
+    tools:context=".CartViewActivity">
+
+    <include layout="@layout/toolbar"></include>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="529dp"
+        android:layout_marginTop="125dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3.8in"
+        android:text="Total Cost"
+        android:fontFamily="sans-serif-black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tprice"
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3.8in"
+        android:text="Price"
+        android:layout_alignParentEnd="true"
+        android:fontFamily="sans-serif-black"
+        android:textSize="20dp"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:id="@+id/buttonPurchase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4in"
+        android:layout_marginLeft="150dp"
+        android:background="@color/myColor4"
+        android:fontFamily="serif-monospace"
+        android:textSize="22dp"
+        android:text="Purchase" />
+
+    <TextView
+        android:id="@+id/textViewNotify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="80dp"
+        android:fontFamily="serif-monospace"
+        android:text="Hello Customer.."
+        android:textColor="@color/white"
+        android:textSize="30dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".AddToCartActivity"
+
+
+    >
+
+    <include
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></include>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="392dp"
+        android:layout_height="252dp"
+        android:layout_marginTop="92dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pizza3" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="289dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="376dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/txtView2"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.211"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="220dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/txtView3"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pizza_size" />
+
+    <EditText
+        android:id="@+id/editTextQuantity"
+        android:layout_width="61dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/txtNumber1"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/pizza_size" />
+
+    <RadioGroup
+        android:id="@+id/pizza_size"
+        android:layout_width="379dp"
+        android:layout_height="109dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <RadioButton
+            android:id="@+id/size1"
+            android:layout_width="102dp"
+            android:layout_height="82dp"
+            android:layout_margin="11dp"
+            android:background="@drawable/radio_selector"
+            android:button="@android:color/transparent"
+
+            android:elevation="4dp"
+            android:fontFamily="serif"
+            android:padding="13dp"
+            android:text="@string/size1"
+
+
+            android:textColor="@drawable/text_color"
+            tools:layout_editor_absoluteX="47dp"
+            tools:layout_editor_absoluteY="376dp" />
+
+
+        <RadioButton
+            android:id="@+id/size2"
+            android:layout_width="103dp"
+            android:layout_height="80dp"
+            android:layout_margin="11dp"
+            android:background="@drawable/radio_selector"
+            android:button="@android:color/transparent"
+            android:elevation="4dp"
+            android:fontFamily="serif"
+            android:padding="13dp"
+            android:text="@string/Size2"
+
+            android:textColor="@drawable/text_color"
+            tools:layout_editor_absoluteX="146dp"
+            tools:layout_editor_absoluteY="376dp" />
+
+
+        <RadioButton
+            android:id="@+id/size3"
+            android:layout_width="101dp"
+            android:layout_height="82dp"
+            android:layout_margin="11dp"
+            android:background="@drawable/radio_selector"
+            android:button="@android:color/transparent"
+
+            android:elevation="4dp"
+            android:fontFamily="serif"
+            android:padding="13dp"
+            android:text="@string/Size3"
+
+
+            android:textColor="@drawable/text_color"
+            tools:layout_editor_absoluteX="229dp"
+            tools:layout_editor_absoluteY="376dp" />
+
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/pizzaname"
+        android:layout_width="168dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="336dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/txtView1"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="89dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="120dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/price1"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="101dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="120dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/price2"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="101dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="116dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/price3"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100sp"
+        android:layout_height="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.76"
+        app:layout_constraintStart_toEndOf="@+id/pizzaname"
+        app:layout_constraintTop_toBottomOf="@+id/imageView1"
+        app:srcCompat="@drawable/pizza" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="100sp"
+        android:layout_height="60sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/pizza_slizes" />
+
+    <Button
+        android:id="@+id/addtocartbutton"
+        android:layout_width="168dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginBottom="48dp"
+        android:background="@color/myColor4"
+        android:fontFamily="serif-monospace"
+        android:onClick="addToCart"
+        android:text="@string/button1"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toEndOf="@+id/imageView2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".UpdateItemActivity">
+
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></include>
+
+
+    <TextView
+        android:id="@+id/itIsATextView"
+        android:layout_width="220dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="120dp"
+        android:fontFamily="casual"
+        android:text="@string/txtView3"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextUQuantity"
+        android:layout_width="61dp"
+        android:layout_height="51dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="120dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/txtNumber1"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <Button
+        android:id="@+id/updatecartbutton"
+        android:layout_width="149dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="44dp"
+        android:background="@color/teal_700"
+        android:fontFamily="serif-monospace"
+        android:onClick="updateItem"
+        android:text="CUSTOMIZE"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.183"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/customAndPurchase"
+        android:layout_width="149dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="44dp"
+        android:background="@color/myColor4"
+        android:fontFamily="serif-monospace"
+        android:onClick="goToPurchase"
+        android:text="PURCHASE"
+        android:textSize="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.847"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/u_pizza_size"
+        android:layout_width="379dp"
+        android:layout_height="109dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="88dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout">
+
+        <RadioButton
+            android:id="@+id/uSize1"
+            android:layout_width="102dp"
+            android:layout_height="82dp"
+            android:layout_margin="11dp"
+            android:background="@drawable/radio_selector"
+            android:button="@android:color/transparent"
+
+            android:elevation="4dp"
+            android:fontFamily="serif"
+            android:padding="13dp"
+            android:text="@string/size1"
+
+
+            android:textColor="@drawable/text_color"
+            tools:layout_editor_absoluteX="47dp"
+            tools:layout_editor_absoluteY="376dp" />
+
+
+        <RadioButton
+            android:id="@+id/uSize2"
+            android:layout_width="103dp"
+            android:layout_height="80dp"
+            android:layout_margin="11dp"
+            android:background="@drawable/radio_selector"
+            android:button="@android:color/transparent"
+            android:elevation="4dp"
+            android:fontFamily="serif"
+            android:padding="13dp"
+            android:text="@string/Size2"
+
+            android:textColor="@drawable/text_color"
+            tools:layout_editor_absoluteX="146dp"
+            tools:layout_editor_absoluteY="376dp" />
+
+
+        <RadioButton
+            android:id="@+id/uSize3"
+            android:layout_width="101dp"
+            android:layout_height="82dp"
+            android:layout_margin="11dp"
+            android:background="@drawable/radio_selector"
+            android:button="@android:color/transparent"
+            android:elevation="4dp"
+            android:fontFamily="serif"
+            android:padding="13dp"
+            android:text="@string/Size3"
+            android:textColor="@drawable/text_color"
+            tools:layout_editor_absoluteX="229dp"
+            tools:layout_editor_absoluteY="376dp" />
+
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="99dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/price1"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/u_pizza_size" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="113dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/price3"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/u_pizza_size" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="94dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/price2"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/u_pizza_size" />
+
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="355dp"
+        android:layout_height="209dp"
+        android:layout_margin="40dp"
+        android:layout_marginTop="28dp"
+        android:background="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include">
+
+
+        <TableRow
+
+            android:layout_width="283dp"
+            android:layout_height="62dp"
+            android:background="@color/myColor4">
+
+            <TextView
+                android:id="@+id/tHeader"
+                android:layout_width="167dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="90dp"
+                android:layout_weight="4"
+                android:fontFamily="sans-serif-condensed"
+                android:padding="10sp"
+                android:text="Your Selection"
+
+
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+
+        </TableRow>
+
+
+        <TableRow
+
+            android:layout_width="283dp"
+            android:layout_height="62dp"
+            android:background="@color/gr2">
+
+            <TextView
+                android:id="@+id/row1col1"
+                android:layout_width="167dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:fontFamily="sans-serif-black"
+                android:padding="10sp"
+                android:text="Pizza Name"
+                android:textColor="@color/design_default_color_on_secondary"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/row1col2"
+                android:layout_width="167dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:fontFamily="sans-serif-black"
+                android:padding="10sp"
+                android:text="hello"
+                android:textColor="@color/design_default_color_on_secondary"
+                android:textSize="14sp" />
+
+        </TableRow>
+
+
+        <TableRow
+
+            android:layout_width="283dp"
+            android:layout_height="62dp"
+            android:background="@color/gr2">
+
+            <TextView
+                android:id="@+id/row2col1"
+                android:layout_width="167dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:fontFamily="sans-serif-black"
+                android:padding="10sp"
+                android:text="Quantity"
+                android:textColor="@color/design_default_color_on_secondary"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/row2col2"
+                android:layout_width="167dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:fontFamily="sans-serif-black"
+                android:padding="10sp"
+                android:text="hello"
+                android:textColor="@color/design_default_color_on_secondary"
+                android:textSize="14sp" />
+
+        </TableRow>
+
+
+        <TableRow
+
+            android:layout_width="283dp"
+            android:layout_height="62dp"
+            android:background="@color/gr2">
+
+            <TextView
+                android:id="@+id/row3col1"
+                android:layout_width="167dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:fontFamily="sans-serif-black"
+                android:padding="10sp"
+                android:text="Size"
+                android:textColor="@color/design_default_color_on_secondary"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/row3col2"
+                android:layout_width="167dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:fontFamily="sans-serif-black"
+                android:padding="10sp"
+                android:text="hello"
+                android:textColor="@color/design_default_color_on_secondary"
+                android:textSize="14sp" />
+
+        </TableRow>
+
+
+        <TableRow
+
+            android:layout_width="283dp"
+            android:layout_height="62dp"
+            android:background="@color/gr2">
+
+            <TextView
+                android:id="@+id/row4col1"
+                android:layout_width="167dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:fontFamily="sans-serif-black"
+                android:padding="10sp"
+                android:text="Total for item"
+                android:textColor="@color/design_default_color_on_secondary"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/row4col2"
+                android:layout_width="167dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:fontFamily="sans-serif-black"
+                android:padding="10sp"
+                android:text="hello"
+                android:textColor="@color/design_default_color_on_secondary"
+                android:textSize="14sp" />
+
+        </TableRow>
+
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Select Your pizza size again"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
